@@ -21,9 +21,18 @@ public class MainActivity extends AppCompatActivity {
         showText.setText(showString);
 
         initBarang();
-        showString += arrBarang[5].toString();
-        addSeparator();
-        showString += arrBarang[8].toString();
+    //  showString += arrBarang[5].toString()
+    //  addSeparator();
+    //  showString += arrBarang[8].toString()
+
+
+        Transaksi trans1 = new Transaksi();
+        trans1.addBarang(arrBarang[3]);
+        trans1.addBarang(arrBarang[7]);
+        trans1.addBarang(arrBarang[1]);
+        showString += trans1.printTransaksi();
+        showString += "Rata - rata harga barang yang dibeli : "+trans1.averageTransaksi();
+        showString +="\n"+trans1.maxBarang();
         showText.setText(showString);
     }
     public void addSeparator(){
@@ -31,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void initBarang(){
         arrBarang[0] = new Barang("Laptop", 1, 7000000);
-        arrBarang[1]= new Barang("Printer", Barang.ELEKTRONIK, 2500000);
+        arrBarang[1]= new Barang("Printer", Barang.ELEKTRONIK, 25000000);
         arrBarang[2]= new Barang("Monitor", Barang.ELEKTRONIK, 3500000);
         arrBarang[3]= new Barang("Meja", Barang.NON_ELEKTRONIK, 1500000);
         arrBarang[4]= new Barang("Kursi", Barang.NON_ELEKTRONIK, 700000);
