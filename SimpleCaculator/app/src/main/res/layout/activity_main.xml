@@ -14,34 +14,34 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="Angka 1" />
-    <editText
+    <EditText
         android:id="@+id/num1"
-        android:layout_height="match_parent"
-        android:layout_width="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
     <RadioGroup
         android:id="@+id/operation"
-        android:orientation="vertical"
-        android:layout_height="match_parent"
-        android:layout_width="wrap_content">
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
         <RadioButton
             android:id="@+id/plus"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_width="wrap_content"
             android:text="+"/>
         <RadioButton
             android:id="@+id/minus"
+            android:layout_height="match_parent"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="-"/>
         <RadioButton
             android:id="@+id/kali"
+            android:layout_height="match_parent"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="*"/>
         <RadioButton
             android:id="@+id/bagi"
+            android:layout_height="match_parent"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="/"/>
         </RadioGroup>
     <TextView
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hitung"
-        android:onClick="Calculate"/>
+        android:onClick="calculate"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
