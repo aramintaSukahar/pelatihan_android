@@ -20,7 +20,7 @@
         android:layout_width="match_parent" />
     <RadioGroup
         android:id="@+id/operation"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
         <RadioButton
@@ -64,5 +64,5 @@
         android:text="0"
         android:textSize="30pt"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimary"/>
+        android:textColor="@color/colorAccent"/>
 </LinearLayout>
