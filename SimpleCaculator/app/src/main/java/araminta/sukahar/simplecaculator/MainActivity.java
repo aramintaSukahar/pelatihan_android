@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (opr == R.id.plus) {
             hasil = angka1 + angka2;
-        } else if (opr == R.id.minus) {
+        } else if (opr == R.id.min) {
             hasil = angka1 - angka2;
         }else if (opr == R.id.kali) {
             hasil = angka1 * angka2;
