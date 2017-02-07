@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="araminta.sukahar.shopreceipt.MainActivity">
+    <EditText
+        android:id="@+id/input1"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/input1"
+        android:gravity="center_vertical"
+        android:text="Baju"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_below="@id/input1"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_below="@id/input1"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="@id/input2"
+        android:gravity="center_vertical"
+        android:text="Celana"/>
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_below="@id/input2"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_below="@id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Kerudung"/>
+    <EditText
+        android:id="@+id/input4"
+        android:layout_below="@id/input3"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_below="@id/input3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Jaket"/>
+
+    <EditText
+        android:id="@+id/input5"
+        android:layout_below="@id/input4"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_below="@id/input4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Kemeja"/>
+
+    <EditText
+        android:id="@+id/input6"
+        android:layout_below="@id/input5"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_below="@id/input5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Kaos"/>
+
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_below="@id/input6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:onClick="calculate"/>
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_below="@id/btn_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     />
+</RelativeLayout>
