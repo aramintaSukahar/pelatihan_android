@@ -13,7 +13,7 @@ public class Tampilan extends AppCompatActivity {
         setContentView(R.layout.activity_tampilan);
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA);
-        TextView messageArea = (TextView) findViewById(R.id.txt_message);
+        TextView messageArea = (TextView) findViewById(R.id.txt);
         messageArea.setText(message);
     }
 }

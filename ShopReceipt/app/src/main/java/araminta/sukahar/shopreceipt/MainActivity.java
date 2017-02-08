@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
         kemeja = Double.parseDouble(input5.getText().toString());
         kaos = Double.parseDouble(input6.getText().toString());
 
-        hasil = "Baju" +baju+ (baju*30000);
-        hasil += "Celana" +celana+ (celana*50000);
-        hasil += "Kerudung" +kerudung+ (kerudung*15000);
-        hasil += "Jaket" +jaket+ (jaket*70000);
-        hasil += "Kemeja" +kemeja+ (kemeja*40000);
-        hasil += "Kaos" +kaos+(kaos*70000);
+        hasil = "Baju" +"  "+baju+ "\t"+(baju*30000)+"\n";
+        hasil += "Celana" +"\t"+celana+ "\t"+(celana*50000)+"\n";
+        hasil += "Kerudung" +"\t"+kerudung+ "\t"+(kerudung*15000)+"\n";
+        hasil += "Jaket" +"\t"+jaket+ "\t"+(jaket*70000)+"\n";
+        hasil += "Kemeja" +"\t"+kemeja+ "\t"+(kemeja*40000)+"\n";
+        hasil += "Kaos" +"\t"+kaos+ "\t"+(kaos*70000)+"\n";
         hasil += "total"+"\t"+((baju*30000)+(celana*50000)+(kerudung*15000)+(jaket*70000)+(kemeja*40000)+(kaos*70000));
 
 
