@@ -10,14 +10,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="araminta.sukahar.aplikasikeuangan.MainActivity">
 
+    <TextView
+        android:id="@+id/txt_saldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="addTransaksi"
         android:text=" Tambah Transaksi" />
-    <TextView
-        android:id="@+id/txt_show"
+
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:id="@+id/list_transaksi"/>
+
 
 </LinearLayout>
